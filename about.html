@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - IGORG</title>
+    <link href="/public/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/bsicons/font.min.css" rel="stylesheet">
+    <link href="/public/site.min.css" rel="stylesheet">
+    <style>
+        .mission-section {
+            padding: 40px 20px;
+        }
+        .mission-statement {
+            font-size: 1.25rem;
+            color: var(--igorg-midnight-ice);
+            line-height: 1.6; /* Improve readability */
+            max-width: 800px; /* Ensure text is not overly wide */
+            margin: 0 auto; /* Center-align the text */
+        }
+
+        .industry-groups h3 {
+            color: var(--igorg-deep-ice-blue);
+            font-size: 1.6rem;
+            margin-top: 20px;
+        }
+        .industry-groups ul {
+            list-style-type: none;
+            padding-left: 1.5em; /* Adds padding to align bullets with content */
+            margin: 0; /* Removes unnecessary margin around the list */
+        }
+        .industry-groups ul li::before {
+            content: "•"; /* Custom bullet */
+            color: var(--igorg-accent-orange); /* Bullet color */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em; /* Matches padding for alignment */
+            margin-left: -1em; /* Aligns bullet with text */
+        }
+        .industry-groups ul li {
+            margin-bottom: 0.5em; /* Adds spacing between items */
+        }
+    </style>
+</head>
+<body>
+<div class="hr-gradient-bar-trim"></div>
+<nav class="navbar navbar-expand-lg">
+    <div class="container"> <!-- container-fluid px-0 -->
+        <a class="navbar-brand d-flex align-items-center" href="/">
+            <img src="/public/logo-seadove.svg" alt="IGORG Logo" style="height: 65px;">
+            <div class="brand-text ms-2">
+                <span class="navbar-title">IGORG</span>
+                <small class="navbar-tagline">Data. Governance. Trust.</small>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item my-auto"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item my-auto"><a class="nav-link active" href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="hr-gradient-bar-trim"></div>
+
+<!-- Donations Banner-->
+<!--<div class="donations-banner text-center py-4">-->
+<!--    <p class="mb-3">-->
+<!--        <i class="bi bi-star-fill star-icon"></i>   We aim to support <span style="color: #FFECB3;">86 orphans</span> through LoveFeeders before 2025!-->
+<!--        Help us make a lasting impact. <i class="bi bi-star-fill star-icon"></i>-->
+<!--    </p>-->
+<!--    <a href="https://lovefeeders.org" class="btn btn-danger px-4 py-2">-->
+<!--        Donate Now-->
+<!--    </a>-->
+<!--</div>-->
+
+<!--<div class="hr-gradient-bar-trim"></div>-->
+
+<header class="panel-bg-olive about-header">
+    <div class="container">
+        <h1>About IGORG</h1>
+        <p>IGORG is The Information Governance Organization.</p>
+    </div>
+</header>
+
+<div class="hr-solid-bar-trim"></div>
+
+<section class="panel-bg-offwhite text-center py-4 mission-section">
+    <div class="container">
+        <h2>Our Mission</h2>
+        <p class="mission-statement">
+            Empowering organizations with <strong>Data. Governance. Trust.</strong> <br>We construct transparent governance patterns to deliver adaptable, self-describing tools for compliance and accountability.
+        </p>
+    </div>
+</section>
+
+<div class="hr-solid-bar-trim"></div>
+
+<section class="panel-main-content">
+    <div class="container">
+        <div class="row align-items-start">
+            <!-- Left Column: Collaboration Content -->
+            <div class="col-md-8">
+                <h2>Collaborate with IGORG</h2>
+                <p>At IGORG, we’re in the <strong>Alpha Phase</strong> of development—a critical stage where your expertise can directly influence the evolution of our governance frameworks.</p>
+                <p>Interested? <strong>There’s no expectation that you will become a client to join.</strong> We are exploring opportunities to open-source a component of our work, so experience matters most.</p>
+
+                <hr>
+                <h3>What to Expect</h3>
+                <ul>
+                    <li><i class="bi bi-people"></i> <strong>Limited Participation:</strong> We are inviting only select individuals and entities who can bring valuable insights to our working groups.</li>
+                    <li><i class="bi bi-shield-lock"></i> <strong>Confidentiality Agreement:</strong> To participate, all collaborators must sign the <span class="fst-italic">IGORG Working Group Memorandum of Understanding (MoU)</span>, which includes a Non-disclosure Agreement (NDA). This ensures all ideas remain protected during the Alpha Phase. NDA restrictions are lifted for publicly released items.</li>
+                    <li><i class="bi bi-chat-dots"></i> <strong>Focused Interaction:</strong> Working groups meet <span class="bold-italic">once per month for one hour</span> on Zoom, with ongoing discussions via dedicated WhatsApp group and email.</li>
+                    <li><i class="bi bi-calendar-month"></i> <strong>Time Commitment:</strong> Participants are asked to <span class="bold-italic">commit for a year</span> (August to August) to ensure continuity and meaningful contributions to the group.</li>
+                </ul>
+
+                <hr>
+                <h3 class="industry-groups">Our Industry Working Groups</h3>
+                <p>We are currently forming <strong>industry-specific working groups</strong> to ensure our solutions align with the unique needs of different sectors:</p>
+                <div class="industry-groups">
+                    <ul>
+                        <li><strong>IGRID:</strong> Exploring approaches to enterprise governance in utilities and critical infrastructure.</li>
+                        <li><strong>XPatient:</strong> Collaborating on tools for healthcare compliance and patient-centric initiatives.</li>
+                        <li><strong>GovServe:</strong> Investigating data-driven solutions to support government oversight needs.</li>
+                        <li><strong>LoveFeeders:</strong> Assisting non-profits with strategies for resource management and accountability.</li>
+                        <li><strong>PeaceFeeders:</strong> Supporting NGOs in improving transparency and operational clarity in international aid.</li>
+                    </ul>
+                </div>
+
+                <hr>
+                <h3>Next Steps</h3>
+                <p>Follow these steps to join IGORG’s collaborative working groups:</p>
+                <ol>
+                    <li><i class="bi bi-pencil-square"></i> <strong>Apply:</strong> Email your application to
+                        <a href="mailto:contact@igorg.io" style="text-decoration:none">contact@igorg.io</a>. Include:
+                        <ul>
+                            <li>Your name and contact information.</li>
+                            <li>A brief summary addressing:
+                                <ul>
+                                    <li>Your professional background and areas of expertise.</li>
+                                    <li>How you envision contributing to IGORG’s mission or collaboration goals.</li>
+                                    <li>What you desire IGORG to help you achieve.</li>
+                                    <li>Relevant experience in compliance, transparency, or governance innovation (if applicable).</li>
+                                </ul>
+                            </li>
+                            <li>Optional: Supporting materials.</li>
+                        </ul>
+                    </li>
+                    <li><i class="bi bi-people-fill"></i> <strong>Capacity:</strong> Working groups are <span class="bold-italic">intentionally small</span> to foster collaboration and maximize impact. <span class="bold-italic">A rejection does not reflect your expertise or experience.</span> Updates will be shared if participation capacity expands.</li>
+                    <li><i class="bi bi-envelope-check"></i> <strong>Approval:</strong> Approved applicants will be invited to sign the MoU/NDA and join the appropriate working group.</li>
+                </ol>
+            </div>
+
+            <!-- Right Column: Contact Details -->
+            <div class="col-md-4 panel-bg-lightblue">
+                <h2>Contact Details</h2>
+                <p><strong>Email:</strong> <a href="mailto:contact@igorg.io">contact@igorg.io</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+18442144447">+1 (844) 214-4447</a> <br>
+                    <small><em>Limited to US and Canada calls.</em></small>
+                </p>
+                <p>
+                    <strong>Address:</strong><br>
+                    Tigsus, Ltd.<br>
+                    2112 Broadway St, Ste 225 #48<br>
+                    Minneapolis, Minnesota<br>
+                    USA
+                </p>
+                <p><small><em>Solicitation-free zone.<br>Thanks for keeping it focused!</em></small></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="hr-gradient-bar-trim"></div>
+<footer class="footer">
+    <p>&copy; 2024 IGORG by <a href="https://tigsus.com" target="_blank" class="brand-name">Tigsus, Ltd.</a> All Rights Reserved.</p>
+    <ul class="list-unstyled d-flex justify-content-center gap-3">
+        <li><a href="/" class="footer-link">Home</a></li>
+        |
+        <li><a href="/about.html" class="footer-link">About</a></li>
+    </ul>
+</footer>
+
+<script src="/public/bootstrap.bundle.min.js"></script>
+</body>
+</html>

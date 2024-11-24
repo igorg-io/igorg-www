@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - IGORG</title>
+    <link href="/public/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/site.min.css" rel="stylesheet">
+    <style>
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 100vh; /* Full-screen height */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover; /* Ensures the image covers the entire area */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repetition */
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: relative;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.6); /* Dark translucent overlay */
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .hero-overlay h1,
+        .hero-overlay p {
+            margin-bottom: 1rem;
+        }
+
+        .hero-overlay .btn {
+            background-color: #4A7C94; /*var(--igorg-arctic-blue); /* Matches site color scheme */
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-overlay .btn:hover {
+            background-color: var(--igorg-accent-orange); /* Highlighted hover state */
+        }
+
+    </style>
+</head>
+<body>
+<div class="hr-gradient-bar-trim"></div>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+            <img src="/public/logo-seadove.svg" alt="IGORG Logo" style="height: 65px;">
+            <div class="brand-text ms-2">
+                <span class="navbar-title">IGORG</span>
+                <small class="navbar-tagline">Data. Governance. Trust.</small>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item my-auto"><a class="nav-link active" href="/">Home</a></li>
+                <li class="nav-item my-auto"><a class="nav-link" href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="hr-gradient-bar-trim"></div>
+
+<!--&lt;!&ndash; Donations Banner&ndash;&gt;-->
+<!--<div class="donations-banner text-center py-4">-->
+<!--    <p class="mb-3">-->
+<!--        <i class="bi bi-star-fill star-icon"></i>   We aim to support <span style="color: #FFECB3;">86 orphans</span> through LoveFeeders before 2025!-->
+<!--        Help us make a lasting impact. <i class="bi bi-star-fill star-icon"></i>-->
+<!--    </p>-->
+<!--    <a href="https://lovefeeders.org" class="btn btn-danger px-4 py-2">-->
+<!--        Donate Now-->
+<!--    </a>-->
+<!--</div>-->
+
+<div class="hr-gradient-bar-trim"></div>
+
+<!-- Hero Section with Overlay -->
+<section class="hero-section position-relative text-center">
+    <div class="hero-bg" style="background-image: url('/public/home-2.webp');"></div>
+    <div class="hero-overlay d-flex align-items-center justify-content-center text-center">
+        <div class="container text-white">
+            <h1 class="display-4 fw-bold">The Information Governance Organization</h1>
+            <p class="lead">Empowering Data. Governance. Trust.</p>
+            <p>
+                At IGORG, we envision a world where transparent data governance builds trust and fosters collaboration. As interconnected stakeholders, we share the responsibility to create a peaceful and sustainable future. It's time we act together.
+            </p>
+            <a href="about.html" class="btn btn-primary btn-lg mt-3">Discover IGORG's Mission</a>
+        </div>
+    </div>
+</section>
+
+<div class="hr-gradient-bar-trim"></div>
+<footer class="footer">
+    <p>&copy; 2024 IGORG by <a href="https://tigsus.com" target="_blank" class="brand-name">Tigsus, Ltd.</a> All Rights Reserved.</p>
+    <ul class="list-unstyled d-flex justify-content-center gap-3">
+        <li><a href="/" class="footer-link">Home</a></li>
+        |
+        <li><a href="/about.html" class="footer-link">About</a></li>
+    </ul>
+</footer>
+
+<script src="/public/bootstrap.bundle.min.js"></script>
+</body>
+</html>

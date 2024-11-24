@@ -1,0 +1,285 @@
+:root {
+    --igorg-arctic-blue: #A8D1E7;
+    --igorg-deep-ice-blue: #4B9BBF;
+    --igorg-olive-green: #76877D;
+    --igorg-midnight-ice: #2B3D4F;
+    --igorg-frost-gray: #E0E7EC;
+    --igorg-accent-orange: #d68d1f;
+    --igorg-light-background: #F7FAFC;
+}
+
+body, html {
+    width: 100%;
+}
+body {
+    background-color: var(--igorg-frost-gray);
+    font-family: 'Arial', sans-serif;
+    color: var(--igorg-midnight-ice);
+}
+
+/* Typography */
+.fst-italic {
+    color: var(--igorg-midnight-ice);
+    font-style: italic;
+}
+
+.fst-italic-highlight {
+    color: var(--igorg-deep-ice-blue);
+    font-style: italic;
+}
+
+.bold-italic {
+    color: var(--igorg-deep-ice-blue);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(var(--igorg-deep-ice-blue), var(--igorg-arctic-blue));
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Align logo, title, and tagline vertically */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center; /* Ensure title and logo align vertically */
+}
+.navbar-brand img {
+    height: 65px; /* Default size for larger screens */
+    transition: height 0.3s ease; /* Smooth scaling for the image */
+}
+.navbar-brand:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-link {
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--igorg-accent-orange);
+    text-decoration: none;
+}
+.nav-link.active {
+    color: var(--igorg-accent-orange) !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensure left alignment */
+    margin-left: 10px; /* Add spacing between logo and text */
+}
+.navbar-title {
+    font-size: 1.4rem; /* Slightly larger for emphasis */
+    font-weight: bold;
+}
+.navbar-tagline {
+    font-size: 0.9rem; /* Adjust for shorter tagline */
+    margin-top: 2px; /* Add slight spacing between title and tagline */
+    font-style: italic;
+    opacity: 0.85;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 40px; /* Reduce logo size on smaller screens */
+    }
+    .navbar-title {
+        font-size: 1rem; /* Reduce size on smaller screens */
+        font-weight: 600; /* Keep some emphasis */
+    }
+    .navbar-tagline {
+        font-size: 0.7rem; /* Smaller tagline font */
+        margin-top: 1px; /* Slightly adjust spacing */
+        opacity: 0.7; /* Reduce visibility */
+    }
+    .navbar {
+        padding: 8px 15px; /* Reduce padding for compact appearance */
+    }
+    .brand-text {
+        margin-left: 5px; /* Reduce spacing between logo and text */
+    }
+}
+
+/* Buttons */
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+/* Horizontal Bars */
+.hr-gradient-bar-trim {
+    height: 6px;
+    background: linear-gradient(to right, var(--igorg-arctic-blue), var(--igorg-deep-ice-blue), var(--igorg-olive-green), var(--igorg-deep-ice-blue), var(--igorg-arctic-blue));
+}
+
+.hr-solid-bar-trim {
+    height: 6px;
+    background-color: var(--igorg-arctic-blue);
+    border: none;
+    margin: 0;
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--igorg-midnight-ice);
+    color: var(--igorg-frost-gray);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.footer .brand-name {
+    color: var(--igorg-accent-orange);
+}
+
+.footer a {
+    color: var(--igorg-arctic-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--igorg-frost-gray);
+    text-decoration: underline;
+}
+
+/* Icons */
+ul li i, ol li i {
+    color: var(--igorg-accent-orange);
+    margin-right: 8px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Generic Panel Backgrounds */
+.panel-main-content {
+    padding: 40px 20px;
+    background-color: var(--igorg-light-background);
+    margin: 40px 0;
+    border-radius: 10px;
+}
+.panel-main-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.panel-bg-lightblue {
+    background-color: #CFEEFF; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #A8D1E7; /* Subtle border with Arctic Blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Light shadow */
+    color: var(--igorg-midnight-ice); /* Text color */
+}
+.panel-bg-lightblue h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.panel-bg-lightblue a {
+    text-decoration: none;
+}
+.panel-bg-lightblue small {
+    color: var(--igorg-midnight-ice); /* Matches text color */
+    opacity: 0.8; /* Slightly muted appearance */
+}
+
+.panel-bg-offwhite {
+    background-color: var(--igorg-light-background); /* Off-white background */
+    padding: 20px 10px;
+    color: var(--igorg-midnight-ice); /* Neutral text color */
+    line-height: 1.6; /* Improve readability */
+    margin: 0 auto; /* Center-align panel */
+}
+.panel-bg-offwhite h2 {
+    font-size: 2rem;
+    color: var(--igorg-deep-ice-blue);
+    margin-bottom: 20px;
+}
+.panel-bg-olive {
+    background: radial-gradient(var(--igorg-olive-green), #969e9e);
+    color: var(--igorg-frost-gray);
+    padding: 60px 20px;
+    text-align: center;
+}
+.panel-bg-olive h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space between title and tagline */
+}
+.panel-bg-olive p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+    max-width: 800px; /* Limit width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Donations Banner */
+.donations-banner {
+    background: radial-gradient(#fb9602, #FFCC80); /* Arctic Orange gradient */
+    color: #FFF; /* White font for contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds depth */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.donations-banner a.btn {
+    background-color: #ff450c; /* Deeper orange for CTA */
+    color: #FFF;
+    transition: background-color 0.3s ease;
+}
+
+.donations-banner a.btn:hover {
+    background-color: #D84315; /* Darker hover state */
+}
+.donations-banner .star-icon {
+    color: #4CAF50; /* Green Star */
+    font-size: 1.8rem; /* Slightly larger than text */
+    margin: 0 5px; /* Space around the icon */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .donations-banner {
+        padding: 20px 10px; /* Reduce padding */
+        font-size: 1rem; /* Reduce text size */
+    }
+
+    .donations-banner p {
+        font-size: 0.9rem; /* Further reduce font size in the banner */
+    }
+
+    .donations-banner .btn {
+        font-size: 0.8rem; /* Adjust button font size */
+        padding: 10px 15px; /* Adjust button padding */
+    }
+    .donations-banner .star-icon {
+        font-size: 1rem; /* Slightly larger than text */
+    }
+
+    .panel-bg-olive {
+        padding: 30px 15px; /* Reduce padding for the olive panel */
+        font-size: 0.9rem; /* Adjust font size for content */
+    }
+
+    .panel-bg-olive h1 {
+        font-size: 2rem; /* Scale down header size */
+    }
+
+    .panel-bg-olive p {
+        font-size: 1rem; /* Reduce font size for paragraph text */
+    }
+}
